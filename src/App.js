@@ -6,7 +6,7 @@ function App() {
   const [role, setRole] = useState();
    const showEmployees=true;
   return (
-    <div className="App bg-red-300">
+    <div className="App">
       {showEmployees ? (
       <>
       <input 
@@ -16,9 +16,17 @@ function App() {
           setRole(e.target.value);
       }}
       />
-        <Employee name = "Marta" role = "Intern" />
-        <Employee name = "Anna"  role={role}/>
-        <Employee name = "Eryk"/>
+      <div className="flex flex-wrap justify-center">
+        <Employee name = "Marta" role = "Intern" img = "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/"/>
+        <Employee name = "Anna"  role={role} img = "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        <Employee name = "Eryk"img = "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        <Employee name = "Marta" role = "Intern"img = "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <Employee name = "Anna"  role={role} img = "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/"/>
+        <Employee name = "Eryk"img = "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/"/>
+        <Employee name = "Marta" role = "Intern" img= "https://images.pexels.com/photos/10057618/pexels-photo-10057618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        <Employee name = "Anna"  role={role}img= "https://images.pexels.com/photos/10057618/pexels-photo-10057618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        <Employee name = "Eryk"img= "https://images.pexels.com/photos/10057618/pexels-photo-10057618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        </div>
         </>
   ):(
             <p>
